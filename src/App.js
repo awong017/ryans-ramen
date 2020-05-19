@@ -12,10 +12,14 @@ const app = () => {
     )
   }
 
+  const value = {};
+
   return (
-    <div>
-      {renderRoutes()}
-    </div>
+    <Context.Provider value={value}>
+      <div className="app">
+        {renderRoutes()}
+      </div>
+    </Context.Provider>
   )
 }
 

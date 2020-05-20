@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, withRouter } from 'react-router-dom';
 import Context from './context';
 import Home from './Components/home';
-import About from './Components/aboutMe';
+import About from './Components/about';
 
 const app = () => {
   const renderRoutes = () => {

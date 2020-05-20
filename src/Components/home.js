@@ -7,10 +7,6 @@ import Collection from './collection';
 
 const Home = Styled.div`
     color: ${(props) => props.theme.bodyColor};
-
-    h1 {
-        text-align: center;
-    }
 `
 
 const home = () => {
@@ -18,7 +14,6 @@ const home = () => {
         <ThemeProvider theme={GlobalStyles}>
             <Home>
                 <Nav />
-                <h1>Ryan's Ramen</h1>
                 <Collection />
             </Home>
         </ThemeProvider>

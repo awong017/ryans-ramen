@@ -8,6 +8,7 @@ const About = Styled.div`
     color: ${(props) => props.theme.bodyColor};
 
     h1 {
+        margin-top: 48px;
         text-align: center;
     }
 `

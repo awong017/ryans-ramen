@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Styled, { ThemeProvider } from 'styled-components';
 import GlobalStyles from '../Styles/globalStyles';
 
-const Nav = Styled.div`
+const NavDiv = Styled.div`
     margin-top: 48px;
     color: ${(props) => props.theme.bodyColor};
 
@@ -42,10 +42,10 @@ const Nav = Styled.div`
     }
 `
 
-const nav = () => {
+const Nav = () => {
     return (
         <ThemeProvider theme={GlobalStyles}>
-            <Nav>
+            <NavDiv>
                 <ul>
                     <li className="about-link">
                         <Link to={"/about"}>
@@ -59,9 +59,9 @@ const nav = () => {
                         </Link>
                     </li>
                 </ul>
-            </Nav>
+            </NavDiv>
         </ThemeProvider>
     )
 }
 
-export default nav;
+export default Nav;

@@ -1,21 +1,29 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Styled, { ThemeProvider } from 'styled-components';
 import GlobalStyles from '../Styles/globalStyles';
 import Context from '../context';
 
-const CollectionItem = Styled.div`
-    h2 {
-        text-align: center;
+const CollectionItemDiv = Styled.div`
+    margin-top: 48px;
+
+    ul {
+        padding-left: 0px;
+        list-style: none;
     }
 `
-const collectionItem = () => {
+const CollectionItem = ({ name, location }) => {
+    const { collection } = useContext(Context)
+
     return (
         <ThemeProvider theme={GlobalStyles}>
-            <CollectionItem>
-                <h2>Collection Item Component</h2>
-            </CollectionItem>
+            <CollectionItemDiv>
+                <ul>
+                    <li>{name}</li>
+                    <li>{location}</li>
+                </ul>
+            </CollectionItemDiv>
         </ThemeProvider>
     )
 }
 
-export default collectionItem;
+export default CollectionItem;

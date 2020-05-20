@@ -5,19 +5,19 @@ import Context from '../context';
 import Nav from './nav';
 import Collection from './collection';
 
-const Home = Styled.div`
+const HomeDiv = Styled.div`
     color: ${(props) => props.theme.bodyColor};
 `
 
-const home = () => {
+const Home = () => {
     return (
         <ThemeProvider theme={GlobalStyles}>
-            <Home>
+            <HomeDiv>
                 <Nav />
                 <Collection />
-            </Home>
+            </HomeDiv>
         </ThemeProvider>
     )
 }
 
-export default home;
+export default Home;

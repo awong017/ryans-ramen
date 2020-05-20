@@ -4,7 +4,7 @@ import GlobalStyles from '../Styles/globalStyles';
 import Context from '../context';
 import Nav from './nav';
 
-const About = Styled.div`
+const AboutDiv = Styled.div`
     color: ${(props) => props.theme.bodyColor};
 
     h1 {
@@ -13,15 +13,15 @@ const About = Styled.div`
     }
 `
 
-const about = () => {
+const About = () => {
     return (
         <ThemeProvider theme={GlobalStyles}>
-            <About>
+            <AboutDiv>
                 <Nav />
                 <h1>About Component</h1>
-            </About>
+            </AboutDiv>
         </ThemeProvider>
     )
 }
 
-export default about;
+export default About;

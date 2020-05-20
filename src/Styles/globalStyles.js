@@ -1,7 +1,7 @@
 const globalStyles = {
 
     // Body Styles
-    bodyColor: "white"
+    bodyColor: "#CCCCCC"
 }
 
 export default globalStyles;

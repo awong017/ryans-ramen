@@ -1,17 +1,15 @@
 import React from 'react';
 import { Route, withRouter } from 'react-router-dom';
 import Context from './context';
-import Styled from 'styled-components';
-import Home from './home';
-
-const App = Styled.div`
-`
+import Home from './Components/home';
+import About from './Components/aboutMe';
 
 const app = () => {
   const renderRoutes = () => {
     return (
       <>
         <Route exact path="/" component={Home} />
+        <Route path="/about" component={About} />
       </> 
     )
   }
